@@ -38,6 +38,7 @@
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="result.php">Add Result</a></li>
                     <li><a class="nav-link" href="view.php">View Result</a></li>
+                    <li><a class="nav-link" href="result1.php">Indiviual Result</a></li>
                     <li><a class="nav-link" href="#">Promotion</a></li>
                 </ul>
             </li>

@@ -164,7 +164,7 @@ $_SESSION["exam"]="";
                                                 <td><?php echo $res["department"]?></td>
                                                 <td><?php echo $res["session"]?></td>
                                                 <td>
-                                                 <?php  echo "<a href='add.php/?xxx=$res[id]&dept=$_SESSION[department]&session_year=$_SESSION[session_year]&year=$_SESSION[year]&exam=$_SESSION[exam]' class='btn btn-icon btn-success'><i
+                                                 <?php  echo "<a href='indiviual.php/?xxx=$res[id]&dept=$_SESSION[department]&session_year=$_SESSION[session_year]&year=$_SESSION[year]&exam=$_SESSION[exam]' class='btn btn-icon btn-success'><i
                                                                 class='fas fa-check'
                                                                 class='btn btn-icon btn-success''></i></a>"
                                                                 ?>

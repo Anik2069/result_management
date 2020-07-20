@@ -67,165 +67,151 @@ session_start();
                                         <hr>
                                     </div>
                                 </div>
+
+
+
+
+                                <?php
+                                include("connection.php");
+                                $d = $_SESSION["department"];
+                                $s =$_SESSION["session_year"];
+                                $y =$_SESSION["year"];
+                                $e=$_SESSION["exam"];
+                                //  echo $query1;
+
+                                ?>
+
                                 <div class="card-body">
                                     <div class="table-responsive">
                                         <table class="table table-striped" id="table-1">
                                             <thead>
                                             <tr>
-                                                <th class="text-center">
-                                                    Roll No.
-                                                </th>
-                                                <th>Std. Name</th>
-                                                <th>Paper</th>
-                                                <th colspan="4" >
-                                                    Bangla
-                                                </th>
-                                                <th colspan="4" >English</th>
-                                                <th colspan="4" >ICT</th>
-                                                <th colspan="4" >Physics</th>
-                                                <th colspan="4" >Chemistry</th>
-                                                <th colspan="4" >Higher Math</th>
-                                                <th colspan="4">Biology</th>
-                                                <th>GPA</th>
-                                                <th>Grad</th>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="2" height="52" align="center" valign="middle"><font face="SutonnyMJ" size="4" color="#000000">Roll</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="2" align="center" valign="middle"><font face="SutonnyMJ" size="4" color="#000000">Part</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan="4" align="center" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Bangla</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan="4" align="center" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">English</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan="5" align="center" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">ICT</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan="4" align="center" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Science</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan="4" align="center" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Chemistry</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan="4" align="center" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Biology</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan="4" align="center" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Higher Math</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="2" align="center" valign="middle"><font face="SutonnyMJ" size="4" color="#000000">Grade</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="2" align="center" valign="middle"><font face="SutonnyMJ" size="4" color="#000000">GPA</font></td>
                                             </tr>
                                             <tr>
-                                                <th></th>
-                                                <th></th>
-                                                <th>Paper</th>
-                                                <th>MCQ</th>
-                                                <th>Theory</th>
-                                                <th>Total</th>
-                                                <th>Grat</th>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">MCQ</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Theory</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Total</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Grade</font></td>
 
 
-                                                <td>MCQ</td>
-                                                <td>Theory</td>
-                                                <td>Total</td>
-                                                <td>Grat</td>
 
 
-                                                <td>MCQ</td>
-                                                <td>Theory</td>
-                                                <td>Total</td>
-                                                <td>Grat</td>
 
-
-                                                <td>MCQ</td>
-                                                <td>Theory</td>
-                                                <td>Total</td>
-                                                <td>Grat</td>
-
-
-                                                <td>MCQ</td>
-                                                <td>Theory</td>
-                                                <td>Total</td>
-                                                <td>Grat</td>
-
-
-                                                <td>MCQ</td>
-                                                <td>Theory</td>
-                                                <td>Total</td>
-                                                <td>Grat</td>
-
-
-                                                <td>MCQ</td>
-                                                <td>Theory</td>
-                                                <td>Total</td>
-                                                <td>Grat</td>
-
-                                                <td rowspan="4">4.50</td>
-                                                <td rowspan="4">A</td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">MCQ</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Theory</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Total</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Grade</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">MCQ</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Theory</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Total</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Grade</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">MCQ</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Theory</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Total</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Grade</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">MCQ</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Theory</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Total</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Grade</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">MCQ</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Theory</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Total</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="bottom"><font face="SutonnyMJ" size="4" color="#000000">Grade</font></td>
                                             </tr>
+
                                             </thead>
-
-
-
-
-                                            <?php
-                                            include("connection.php");
-                                            $d = $_SESSION["department"];
-                                            $s =$_SESSION["session_year"];
-                                            $y =$_SESSION["year"];
-                                            $e=$_SESSION["exam"];
-                                            $query1= mysqli_query($connection, "select * from result where (department='$d' and session='$s') and (year='$y' and exam='$e')");
-                                          //  echo $query1;
-
-                                            ?>
-
-
-
-
-
-
-
-
-
                                             <tbody>
                                             <?php
-                                            while ($res=mysqli_fetch_assoc($query1)) {
+                                            $query2 = mysqli_query($connection,"select * from student where  (department='$d' and session='$s') and year='$y' ");
 
+
+                                            $vv2= mysqli_query($connection,"select * from subject where department = '$d'");
+
+
+
+                                            $query1= mysqli_query($connection, "select * from result where (department='$d' and session='$s') and (year='$y' and exam='$e')");
 
 
 
                                             ?>
-
-
                                             <tr>
-                                                <td ><?php echo $res["roll"]?></td>
-                                                <td><?php echo $res["name"]?></td>
-                                                <td>1sr</td>
-                                                <td>50</td>
-                                                <td>20</td>
-                                                <td>1000</td>
-                                                <td>A</td>
-
-
-                                                <td>MCQ</td>
-                                                <td>Theory</td>
-                                                <td>Total</td>
-                                                <td>Grat</td>
-
-
-                                                <td>MCQ</td>
-                                                <td>Theory</td>
-                                                <td>Total</td>
-                                                <td>Grat</td>
-
-
-                                                <td>MCQ</td>
-                                                <td>Theory</td>
-                                                <td>Total</td>
-                                                <td>Grat</td>
-
-
-                                                <td>MCQ</td>
-                                                <td>Theory</td>
-                                                <td>Total</td>
-                                                <td>Grat</td>
-
-
-                                                <td>MCQ</td>
-                                                <td>Theory</td>
-                                                <td>Total</td>
-                                                <td>Grat</td>
-
-
-                                                <td>MCQ</td>
-                                                <td>Theory</td>
-                                                <td>Total</td>
-                                                <td>Grat</td>
-
-                                                <td rowspan="4">4.50</td>
-                                                <td rowspan="4">A</td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="2" height="40" align="center" valign="middle" sdval="704" sdnum="1033;"><font face="SutonnyMJ" size="4">704</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="middle"><font face="SutonnyMJ" size="4">1st</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="10" sdnum="1033;"><font face="SutonnyMJ" size="4">10</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="24" sdnum="1033;"><font face="SutonnyMJ" size="4">24</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="34" sdnum="1033;"><font face="SutonnyMJ" size="4">34</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="2" align="center" valign="middle"><font face="Times New Roman" size="4">D</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="10" sdnum="1033;"><font face="SutonnyMJ" size="4">10</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="24" sdnum="1033;"><font face="SutonnyMJ" size="4">24</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="34" sdnum="1033;"><font face="SutonnyMJ" size="4">34</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="2" align="center" valign="middle"><font face="Times New Roman" size="4">D</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="14" sdnum="1033;"><font face="SutonnyMJ" size="4">14</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="22" sdnum="1033;"><font face="SutonnyMJ" size="4">22</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="17" sdnum="1033;"><font face="SutonnyMJ" size="4">17</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="53" sdnum="1033;"><font face="SutonnyMJ" size="4">53</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="2" align="center" valign="middle"><font face="Times New Roman" size="4">B</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="15" sdnum="1033;"><font face="SutonnyMJ" size="4">15</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="27" sdnum="1033;"><font face="SutonnyMJ" size="4">27</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="42" sdnum="1033;"><font face="SutonnyMJ" size="4">42</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="2" align="center" valign="middle"><font face="Times New Roman" size="4">C</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="20" sdnum="1033;"><font face="SutonnyMJ" size="4">20</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="26" sdnum="1033;"><font face="SutonnyMJ" size="4">26</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="46" sdnum="1033;"><font face="SutonnyMJ" size="4">46</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="2" align="center" valign="middle"><font face="Times New Roman" size="4">C</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="20" sdnum="1033;"><font face="SutonnyMJ" size="4">20</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="30" sdnum="1033;"><font face="SutonnyMJ" size="4">30</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="50" sdnum="1033;"><font face="SutonnyMJ" size="4">50</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="2" align="center" valign="middle"><font face="Times New Roman" size="4">C</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="17" sdnum="1033;"><font face="SutonnyMJ" size="4">17</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="23" sdnum="1033;"><font face="SutonnyMJ" size="4">23</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="40" sdnum="1033;"><font face="SutonnyMJ" size="4">40</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="2" align="center" valign="middle"><font face="Times New Roman" size="4">D</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="2" align="center" valign="middle"><font face="Times New Roman" size="4">D</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="2" align="center" valign="middle"><font face="SutonnyMJ" size="4">1.83</font></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign="middle"><font face="SutonnyMJ" size="4">2nd</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="33" sdnum="1033;"><font face="SutonnyMJ" size="4">33</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="33" sdnum="1033;"><font face="SutonnyMJ" size="4">33</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="33" sdnum="1033;"><font face="SutonnyMJ" size="4">33</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="0" sdnum="1033;"><font face="SutonnyMJ" size="4">0</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="0" sdnum="1033;"><font face="SutonnyMJ" size="4">0</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="0" sdnum="1033;"><font face="SutonnyMJ" size="4">0</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="12" sdnum="1033;"><font face="SutonnyMJ" size="4">12</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="30" sdnum="1033;"><font face="SutonnyMJ" size="4">30</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="42" sdnum="1033;"><font face="SutonnyMJ" size="4">42</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="15" sdnum="1033;"><font face="SutonnyMJ" size="4">15</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="23" sdnum="1033;"><font face="SutonnyMJ" size="4">23</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="38" sdnum="1033;"><font face="SutonnyMJ" size="4">38</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="16" sdnum="1033;"><font face="SutonnyMJ" size="4">16</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="27" sdnum="1033;"><font face="SutonnyMJ" size="4">27</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="43" sdnum="1033;"><font face="SutonnyMJ" size="4">43</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="12" sdnum="1033;"><font face="SutonnyMJ" size="4">12</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="23" sdnum="1033;"><font face="SutonnyMJ" size="4">23</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle" sdval="35" sdnum="1033;"><font face="SutonnyMJ" size="4">35</font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle"><font face="SutonnyMJ" size="4"><br></font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle"><font face="SutonnyMJ" size="4"><br></font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle"><font face="SutonnyMJ" size="4"><br></font></td>
+                                                <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="middle"><font face="SutonnyMJ" size="4"><br></font></td>
                                             </tr>
 
 
 
 
-                                            <?php
-                                            }
-                                            ?>
+
+
+
 
                                             </tbody>
                                         </table>
